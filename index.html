@@ -1,0 +1,173 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css"/>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+<!--<![endif]-->
+
+
+</head>
+
+<body onLoad="checkCookie()">
+
+
+<div class="head-bg">
+	<div class="head-content-box">
+		<div class="head-content-item align-left"><img src="https://geekcash.org/www/media/logo.png" class="logo"/></div>
+		<div class="head-content-item align-left main-title"> Geekcash Treasure Game </div>
+		<div class="head-content-item align-right head-item-text"><a href="#"> 中文 </a></div>
+		<div class="head-content-item align-right head-item-text">&nbsp; | &nbsp;</div>
+		<div class="head-content-item align-right head-item-text padding-left-15"><a href="#"> English </a></div>
+		<div class="head-content-item align-right head-item-text padding-left-15 padding-right-15"><a herf="#">Rules</a></div>
+		<div class="head-content-item align-right head-item-text padding-left-15 padding-right-15"><a herf="#">Home</a></div>
+	</div>
+</div>
+
+
+<div class="des-bg" id="app">
+	<div class="des-content-box">
+		{{ message }}
+	</div>
+</div>
+
+
+<div class="city-bg" id="app-city">
+	<div class="city-content-box">
+
+		<div class="city-item city-item-title">
+			<div>城市</div>
+			<div>下注地址</div>
+			<div>下注数量</div>
+			<div>下注金额</div>
+			<div>下注数量 %</div>
+			<div>下注金额 %</div>
+		</div>
+
+
+		<div class="city-item">
+			<div>东京</div>
+			<div>GguKvTc7tTE8ugJ5gBGj3MJCwwvZVDDPHq</div>
+			<div>180004500</div>
+			<div>285000000</div>
+			<div>85 %</div>
+			<div>71 %</div>
+		</div>
+
+		<div class="city-item">
+			<div>首尔</div>
+			<div>GguKvTc7tTE8ugJ5gBGj3dfdCwwvZVDDPHq</div>
+			<div>180440000</div>
+			<div>2859650000</div>
+			<div>85 %</div>
+			<div>71 %</div>
+		</div>
+
+		<div class="city-item">
+			<div>罗马</div>
+			<div>GguKvTc7tTE8ugJ5gBsssdfeMJCwwvZVDDPHq</div>
+			<div>1804540000</div>
+			<div>285000000</div>
+			<div>85 %</div>
+			<div>71 %</div>
+		</div>
+
+		<div class="city-item">
+			<div>伦敦</div>
+			<div>GguKvTc7tTE8ugJ5gBghthgCwwvZVDDPHq</div>
+			<div>1800045400</div>
+			<div>285045000</div>
+			<div>85 %</div>
+			<div>71 %</div>
+		</div>
+
+		<div>
+			{{ lastcity }}
+		</div>
+
+	</div>
+</div>
+
+
+<div id="app">
+  {{ message }}
+</div>
+
+</body>
+
+
+
+</html>
+
+
+<script>
+
+
+function setCookie(c_name,value,expiredays)
+{
+	var exdate=new Date()
+	exdate.setDate(exdate.getDate()+expiredays)
+	document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+}
+
+
+function getCookie(c_name)
+{
+	if (document.cookie.length>0)
+	{
+		c_start=document.cookie.indexOf(c_name + "=")
+		if (c_start!=-1)
+		{ 
+			c_start=c_start + c_name.length+1 
+			c_end=document.cookie.indexOf(";",c_start)
+			if (c_end==-1) c_end=document.cookie.length
+			return unescape(document.cookie.substring(c_start,c_end))
+		} 
+	}
+	return ""
+}
+
+
+function checkCookie()
+{
+	username=getCookie('username')
+	if (username!=null && username!="")
+	{
+		alert('Welcome again '+username+'!')
+	}
+	else 
+	{
+		username=prompt('Please enter your name:',"")
+		if (username!=null && username!="")
+		{
+			setCookie('username',username,365)
+		}
+	}
+}
+
+
+
+var last_city = "Tokyo"
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'This is a Geekcash Game'
+  }
+})
+
+var app2 = new Vue({
+  el: '#app-city',
+  data: {
+    lastcity: 'This is last city ' + last_city
+  }
+})
+
+</script>
