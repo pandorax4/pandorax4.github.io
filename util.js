@@ -66,6 +66,8 @@ function getLanguage(){
 		setCookie(cookieName, lang, 365);
 	}
 
+	alert("Get Language: " + lang);
+
 	return lang;
 }
 
@@ -79,13 +81,15 @@ function isEnglish(){
 	return lang == "en";
 }
 
-function setChinese(){
+function setChineseLangCookie(){
+	alert("Set Language Chinese Cookie");
 	var cookieName = "GeekCashTreasureGame";
 	var lang = "ch";
 	setCookie(cookieName, lang, 365);
 }
 
-function setEnglish(){
+function setEnglishLangCookie(){
+	alert("Set Language English Cookie");
 	var cookieName = "GeekCashTreasureGame";
 	var lang = "en";
 	setCookie(cookieName, lang, 365);
@@ -97,3 +101,12 @@ function OnPageLoad(){
 	alert("On Page Load");
 	
 }
+
+dotest = function (){
+	alert("THis is a file test");
+}
+
+
+dosave = function (){  
+        alert("成功啦！");  
+    } 
