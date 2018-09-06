@@ -1,43 +1,32 @@
-function setCookie(c_name,value,expiredays)
-{
-	var exdate=new Date()
-	exdate.setDate(exdate.getDate()+expiredays)
-	document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+	function setCookie(cname,cvalue,exdays){
+		alert("SEt Cookie: " + cname + "  " + cvalue + "  " + exdays)
+    var d = new Date();
+    d.setTime(d.getTime()+(exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+}
+function getCookie(cname){
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+    }
+    return "";
 }
 
 
-function getCookie(c_name)
-{
-	if (document.cookie.length>0)
-	{
-		c_start=document.cookie.indexOf(c_name + "=")
-		if (c_start!=-1)
-		{ 
-			c_start=c_start + c_name.length+1 
-			c_end=document.cookie.indexOf(";",c_start)
-			if (c_end==-1) c_end=document.cookie.length
-			return unescape(document.cookie.substring(c_start,c_end))
-		} 
-	}
-	return ""
-}
-
-
-function checkCookie()
-{
-	username=getCookie('username')
-	if (username!=null && username!="")
-	{
-		alert('Welcome again '+username+'!')
-	}
-	else 
-	{
-		username=prompt('Please enter your name:',"")
-		if (username!=null && username!="")
-		{
-			setCookie('username',username,365)
-		}
-	}
+function checkCookie(){
+    var user=getCookie("username");
+    if (user!=""){
+        alert("欢迎 " + user + " 再次访问");
+    }
+    else {
+        user = prompt("请输入你的名字:","");
+          if (user!="" && user!=null){
+            setCookie("username",user,30);
+        }
+    }
 }
 
 function getIP(){
@@ -51,28 +40,28 @@ function getLocationByIP(ip){
 function getLanguage(){
 	var cookieName = "GeekCashTreasureGame";
 	var lang = getCookie(cookieName);
-	if(lang == ""){
+	alert("from Cookie language: " + lang);
+	if(lang == null || lang == ""){
 		lang = navigator.language || navigator.userLanguage;
 		if(lang.substr(0,3) == 'zh-') {
 			// Load Chinese
 			//window.location.href='./ch/index.html';
 			lang="ch";
+			setCookie(cookieName,lang,365);
 		}
 		else{
 			// Load English
 			//window.location.href='./en/index.html';
 			lang="en";
+			setCookie(cookieName,lang,365);
 		}
-		setCookie(cookieName, lang, 365);
 	}
-
-	alert("Get Language: " + lang);
-
 	return lang;
 }
 
 function isChinese(){
 	var lang = getLanguage();
+	alert("Is Chinese: " + lang);
 	return lang == "ch";
 }
 
