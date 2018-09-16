@@ -1,15 +1,17 @@
-.head-bg{
+
+.index-head-bg{
 	height:115px;
 	background:#222222;
 	justify-content: center;
 	width:100%;
 }
 
-.head-content-box{
+.index-head-content{
 	width:1170px;
 	height:100%;
 	margin:auto;
 	line-height: 115px;
+	/*border:1px solid red;*/
 }
 
 .head-content-item{
@@ -67,7 +69,6 @@
 	border:1px solid red;
 }
 
-
 .head-item-text a{
 	color:white;
 	-o-transition:color .2s ease-out, background 2s ease-in;
@@ -102,99 +103,103 @@
 
 
 
-.des-bg{
-	background: #F8F8FF;
-	height:592px;
-	justify-content: center;
-	width:100%;
-	border:1px solid red;
-}
 
-.des-content-box{
+
+
+.content-box{
 	width:1170px;
-	height:100%;
 	margin:auto;
-	line-height: 592px;
-	border:1px solid yellow;
-}
-
-
-
-
-.city-bg{
-	justify-content: center;
-	width:100%;
 	border:1px solid red;
 }
 
 
-.city-content-box{
-	width:1170px;
-	height:100%;
-	margin:auto;
-	border:1px solid yellow;
+/* --------------------------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------------------------------- */
+
+
+
+
+
+.index-footer{
+	height:180px;
+	background:#222222;
+	justify-content: center;
+	width:100%;
 }
 
+.index-footer-community{
+	width:300px;
+	margin:auto;
+	height:30px;
+	padding-top:15px;
+	text-align:center;
+}
 
-.city-item{
-	border:1px solid #DCDCDC;
-	width:100%;
+.index-footer-logo{
+	width:260px;
+	margin:auto;
+	height:60px;
+	margin-top:5px;
+}
+
+.index-footer-logo div:nth-child(1){
+	display:inline-block;
 	height:60px;
 	line-height:60px;
-	text-align:center;
-	margin-bottom: 10px;
-}
-
-
-.city-item-title{
-	margin-bottom: 10px;
-	margin-top: 20px;
-	font-size:24px;
-}
-
-
-.city-item div{
-	height:60px;
-	line-height: 60px;
-	display: inline-block;
 	float:left;
 }
 
 
-/* city name */
-.city-item div:nth-child(1){
-	width:130px;
-	border-right: 1px solid #DCDCDC;
+.index-footer-logo div:nth-child(2){
+	display:inline-block;
+	height:60px;
+	line-height:60px;
+	float:left;
+	color:white;
+	margin-left:0px;
+	width:200px;
+	text-align: center;
+	font-size: 24px;
+	margin-top:5px;
 }
 
-/* city bet address */
-.city-item div:nth-child(2){
-	width:450px;
-	border-right: 1px solid #DCDCDC;
-}
 
-/* city bet count */
-.city-item div:nth-child(3){
-	width:145px;
-	border-right: 1px solid #DCDCDC;
-}
-
-/* city bet amount */
-.city-item div:nth-child(4){
-	width:145px;
-	border-right: 1px solid #DCDCDC;
-}
-
-/* city bet count percentage */
-.city-item div:nth-child(5){
-	width:145px;
-	border-right: 1px solid #DCDCDC;
-}
-
-/* city bet amount percentage */
-.city-item div:nth-child(6){
-	width:145px;
+.index-footer-logo img{
+	width:43px;
+	height:50px;
+	margin-top:10px;
 }
 
 
 
+.index-footer-copyright{
+	width:300px;
+	margin:auto;
+	height:20px;
+	text-align: center;
+	color:white;
+	font-size: 14px;
+}
+
+.index-footer-contact{
+	width:800px;
+	margin:auto;
+	height:30px;
+	font-size: 14px;
+	color:white;
+	text-align: center;
+	line-height: 30px;
+	margin-top:10px;
+}
+
+.index-footer-contact a{
+	color:#8FAAAF;
+}
+
+.index-footer-contact a:link{
+	color:#8FAAAF;
+}
