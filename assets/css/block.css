@@ -107,26 +107,110 @@
 
 
 .content-box{
-	width:1170px;
+	width:1270px;
 	margin:auto;
 }
 
 
 /* --------------------------------------------------------------------------- */
-.rule-box{
-	margin-top: 50px;
-	margin-bottom:50px;
+.block-info{
+	text-align:center;
+	margin-top:100px;
+	background:#FAFAFA;
+	padding-top:30px;
+	padding-bottom: 30px;
 }
 
+.block-info div:nth-child(1){
+	font-size:40px;
+}
 
-.rule-title{
+.block-info-item{
+	margin-top:5px;
+	font-size:20px;
+}
+
+.block-info-item span{
 	font-weight: bold;
-	font-size: 26px;
 }
 
-.rule-content{
-	font-size:16px;
-	margin-top:20px;
+
+.block-bets-box{
+	width:1270px;
+	margin-top:100px;
+	margin-bottom:50px;
+	min-height: 300px;
+}
+
+.block-bets-header{
+	border-radius:5px;
+	-moz-border-radius:25px; /* 老的 Firefox */
+	/*border:2px solid #a1a1a1;*/
+
+	margin-top:10px;
+	background:#FAFAFA;
+}
+
+.bet-header-title{
+	display:inline-block;
+	text-align: center;
+	font-size:15px;
+	font-weight: bold;
+	margin-right:10px;
+}
+
+.bet-content-item{
+	display:inline-block;
+	text-align: center;
+	font-size:14px;
+	margin-right:10px;
+}
+
+.bet-number{
+	width:80px;
+}
+
+.bet-result{
+	width:60px;
+}
+
+.bet-devil{
+	width:80px;
+}
+
+.bet-amount{
+	width:90px;
+}
+
+.bet-reward{
+	width:90px;
+}
+
+.join-txid{
+	width:120px;
+}
+
+.pay-txid{
+	width:120px;
+}
+
+.join-time{
+	width:160px;
+}
+
+.player-address{
+	width:330px;
+}
+
+.block-bets{
+	margin-top:15px;
+}
+
+.block-bet{
+	border-radius:5px;
+	-moz-border-radius:25px;
+	margin-top:10px;
+	background:#FAFAFA;
 }
 /* --------------------------------------------------------------------------- */
 
