@@ -3,7 +3,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
 <script src="../assets/js/util.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../assets/css/haha.css"/>
+<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
 </head>
 
 <body style="font-family:Microsoft YaHei;">
@@ -24,7 +24,7 @@
 <div class="index-head-bg">
     <div class="index-head-content">
         <div class="head-content-item align-left"><img src="https://geekcash.org/www/media/logo.png" class="logo"/></div>
-        <div class="head-content-item align-left main-title"> Geekcash Devil Game </div>
+        <div class="head-content-item align-left main-title"> GeekCash Games </div>
         <div class="head-content-item align-right head-item-text"><a href="#"> 中文 </a></div>
         <div class="head-content-item align-right head-item-text">&nbsp; | &nbsp;</div>
         <div class="head-content-item align-right head-item-text padding-left-15"><a href="#"> English </a></div>
@@ -34,26 +34,28 @@
     </div>
 </div>
 
-<div class="index-des-box">
-    <div class="index-des-main1">
-        幸运魔鬼
-    </div>
+<div class="banner-box">
+    <div class="index-des-box">
+        <div class="index-des-main1">
+            <!--GeekCash 幸运轮盘-->
+        </div>
 
-    <div class="index-des-main2">
-        赢取大额的GeekCash
-    </div>
+        <div class="index-des-main2">
+            幸运轮盘, 快速赢取大额 GeekCash
+        </div>
 
-    <div class="index-des-story">
-        <!--权力之争，无休无止，每过一段时间，10个拥有无限能力的魔鬼，会为争夺王权而战，不分高下。幸运的眷顾，会让唯一的魔鬼，战胜一切，获得无上荣耀 -->
-        10个魔鬼相互战斗，最终会有一个幸运的魔鬼获胜。
+        <div class="index-des-story">
+            <!--权力之争，无休无止，每过一段时间，10个拥有无限能力的魔鬼，会为争夺王权而战，不分高下。幸运的眷顾，会让唯一的魔鬼，战胜一切，获得无上荣耀 -->
+            <!--10个魔鬼相互战斗，最终会有一个幸运的魔鬼获胜。-->
+        </div>
     </div>
-
 </div>
 
 <div class="index-block-bg">
     <div class="index-block-box">
         <div class="index-block-left">
 
+            <!--
             <div class="block-left-01">
                 <div class="block-left-01-title">本轮游戏结算区块</div>
                 <div class="block-left-01-content"><a>1802000</a></div>
@@ -84,9 +86,21 @@
                 <div class="block-left-06-content">魔鬼5</div>
             </div>
 
-            <div class="block-left-07">
-                <div class="block-left-buy">购买GeekCash</div>
-                <div class="block-left-history">历史下注</div>
+
+            -->
+
+            <div>第 1 轮游戏进行中... (小赌注)</div>
+            <div>下注数量: 5</div>
+            <div>下注总金额: 8000 GeekCash</div>
+            <div><a href="#">上轮游戏结果:</a></div>
+            <div><span>下注数量: 2</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>下注总金额: 6000</span></div>
+            <div><span>赢家数量: 1</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>输家数量: 1</span></div>
+            <div>总奖金: 4000 GeekCash</div>
+            <div>胜利数字: 7</div>
+            <div>
+                <span class="index-block-box-tobuy"><a href="https://aiodex.com/exchange/GEEK_BTC">购买GeekCash</a></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="index-block-box-history"><a href="#">所有历史游戏</a></span>
             </div>
 
         </div>
@@ -97,34 +111,131 @@
         <div class="index-block-right">
             <div class="block-right-01">如何操作?</div>
             <div class="block-right-02">
-                1. 每轮游戏时长为1000个区块，在每一轮游戏结束前进行下注，否则自动作为下轮游戏下注。
+                1. 每轮游戏，所有赢家下注金额全部返还，然后按下注比例瓜分所有输家下注金额。
             </div>
 
             <div class="block-right-03">
-                2. 选择一个地址转入GeekCash，进行一次下注。可进行多次下注。<br><span style="color:red; font-weight: bold;">(请不要从交易所地址转入GeekCash)</span>
+                2. 在所有下注若产生赢家和输家，则本轮游戏结束，进行奖金分配。下轮游戏自动开始。(<a href="rules.html">详细判定规则</a>)
+                <!--2. 选择一个地址转入GeekCash，进行一次下注。可进行多次下注。<br><span style="color:red; font-weight: bold;">(请不要从交易所地址转入GeekCash)</span>-->
             </div>
 
             <div class="block-right-04">
-                3. 每一次下注，至少1000 GeekCash, 若低于1000GeekCash, 则自动输掉下注。
+                3. 每一次下注，<span style="color:red;">至少1000 GeekCash</span>, 若低于 1000 GeekCash, 则自动输掉下注。
             </div>
 
             <div class="block-right-05">
-                4. 若下注的魔鬼获胜，则下注本金原数返还，然后根据下注金额占获胜魔鬼总下注金额的比例进行奖金分配
+                4. <span style="color:red;">请勿从任何交易所地址进行下注。</span>
             </div>
         </div>
     </div>
 </div>
 
 
-
-<div class="bet-title-box">
-    <div class="bet-title-01"> 选择你的幸运魔鬼，进行下注</div>
-    <div class="bet-title-02">
-        每一次下注，至少1000 GeekCash, 若低于1000GeekCash, 则自动输掉下注，纳入奖池。
-    </div>
+<div class="bet-level-box">
+    <a href="#"><div class="bet-level-item bet-level-item-margin-right-125 bet-level-item-selected">小赌注</div></a>
+    <a href="#"><div class="bet-level-item bet-level-item-margin-right-125 ">中赌注</div></a>
+    <a href="#"><div class="bet-level-item">大赌注</div></a>
 </div>
 
 
+<div class="bet-title-box">
+    <div class="bet-title-01"> 选择你的幸运数字，进行下注</div>
+    <div class="bet-title-02">
+        每一次下注，至少1000 GeekCash, 若低于1000GeekCash, 则自动输掉下注。
+    </div>
+</div>
+
+<div class="bet-number-box">
+    <div class="bet-number-item-title">
+        <div class="item-bet-number">下注数字</div>
+        <div class="item-bet-address">下注地址</div>
+        <div class="item-bet-all-count">总下注次数</div>
+        <div class="item-bet-all-money">总下注金额</div>
+        <div class="item-bet-win-count">开奖次数</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">0</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">1</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">2</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">3</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">3</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">4</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">5</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">6</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">7</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">8</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+
+    <div class="bet-number-item">
+        <div class="item-bet-number">9</div>
+        <div class="item-bet-address">GMkD1goun42si2wFje54d6on2XVUJvuMQo</div>
+        <div class="item-bet-all-count">8</div>
+        <div class="item-bet-all-money">76985</div>
+        <div class="item-bet-win-count">1</div>
+    </div>
+</div>
+
+<!--
 <div class="bet-devil-box">
     <div class="bet-devil-left">
 
@@ -367,7 +478,7 @@
     </div>
 
 </div>
-
+-->
 
 <div class="index-footer">
     <div class="index-footer-community">

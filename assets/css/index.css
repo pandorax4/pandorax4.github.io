@@ -101,14 +101,22 @@
 }
 
 
+.banner-box{
+	width:100%;
+	height:300px;
 
+/*
+	background:url("../images/banner1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	*/
+}
 
 
 .index-des-box{
 	width:1170px;
 	height:300px;
 	margin:auto;
-	/*border:1px solid red;*/
 }
 
 .index-des-main1 {
@@ -122,12 +130,11 @@
 }
 
 .index-des-main2{
-	/*border: 1px solid red;*/
 	height:40px;
-	padding-left:370px;
-	padding-right:370px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 30px;
+	color:black;
+	font-weight: bold;
 }
 
 
@@ -177,212 +184,79 @@
 }
 
 
-
-.block-left-01{
-
-	/*border:1px solid red;*/
-	height:54px;
-	width:512px;
-	margin:auto;
-	margin-top:54px;
+.index-block-left div:nth-child(1){
+	margin-top:40px;
+	font-size:26px;
+	font-weight: bold;
 }
 
-.block-left-01-title{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:200px;
-	height:54px;
-	float:left;
-	line-height: 54px;
-	margin-left:50px;
+.index-block-left div:nth-child(2){
+	margin-top:20px;
+	font-size:18px;
+	font-weight: bold;
 }
 
-.block-left-01-content{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:250px;
-	height:54px;
-	line-height: 54px;
-	float:right;
-	font-size:36px;
-	color:red;
+.index-block-left div:nth-child(3){
+	margin-top:5px;
+	font-size:18px;
+	font-weight: bold;
 }
 
-
-.block-left-02{
-	/*border:1px solid red;*/
-	height:35px;
-	width:512px;
-	margin:auto;
-}
-
-.block-left-02-title{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:200px;
-	height:35px;
-	float:left;
-	line-height: 35px;
-	margin-left:50px;
-}
-
-.block-left-02-content{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:250px;
-	height:35px;
-	line-height: 35px;
-	float:right;
-	font-size:20px;
-}
-
-
-.block-left-03{
-	/*border:1px solid red;*/
-	height:30px;
-	width:512px;
-	margin:auto;
-}
-
-.block-left-03-title{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:200px;
-	height:35px;
-	float:left;
-	line-height: 35px;
-	margin-left:50px;
-}
-
-.block-left-03-content{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:250px;
-	height:35px;
-	line-height: 35px;
-	float:right;
-	font-size:20px;
-}
-
-
-
-.block-left-04{
-	/*border:1px solid red;*/
-	height:35px;
-	width:512px;
-	margin:auto;
-}
-
-.block-left-04-title{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:200px;
-	height:35px;
-	float:left;
-	line-height: 35px;
-	margin-left:50px;
-}
-
-.block-left-04-content{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:250px;
-	height:35px;
-	line-height: 35px;
-	float:right;
-	font-size:20px;
-}
-
-
-
-.block-left-05{
-	/*border:1px solid red;*/
-	height:35px;
-	width:512px;
-	margin:auto;
-}
-
-.block-left-05-title{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:200px;
-	height:35px;
-	float:left;
-	line-height: 35px;
-	margin-left:50px;
-}
-
-.block-left-05-content{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:250px;
-	height:35px;
-	line-height: 35px;
-	float:right;
-	font-size:20px;
-}
-
-
-
-.block-left-06{
-	/*border:1px solid red;*/
-	height:35px;
-	width:512px;
-	margin:auto;
-}
-
-.block-left-06-title{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:200px;
-	height:35px;
-	float:left;
-	line-height: 35px;
-	margin-left:50px;
-}
-
-.block-left-06-content{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:250px;
-	height:35px;
-	line-height: 35px;
-	float:right;
-	font-size:20px;
-}
-
-
-.block-left-07{
-	/*border:1px solid red;*/
-	height:50px;
-	width:512px;
-	margin:auto;
+.index-block-left div:nth-child(4){
 	margin-top:30px;
+	font-size:18px;
+	font-weight: bold;
 }
 
-.block-left-buy{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:200px;
-	height:50px;
-	float:left;
-	line-height: 50px;
-	margin-left:50px;
-	color:#3F51B5;
-	font-size:20px;
+.index-block-left div:nth-child(4) a:visited{
+	color:blue;
 }
 
-.block-left-history{
-	display: inline-block;
-	/*border:1px solid red;*/
-	width:250px;
-	height:50px;
-	line-height: 50px;
-	float:right;
-	font-size:20px;
-	color:#3F51B5;
+.index-block-left div:nth-child(5){
+	margin-top: 10px;
+	font-size:14px;
 }
 
+.index-block-left div:nth-child(6){
+	margin-top:5px;
+	font-size:14px;
+}
+
+.index-block-left div:nth-child(7){
+	margin-top:5px;
+	font-size:14px;
+}
+
+.index-block-left div:nth-child(8){
+	margin-top:5px;
+	font-size:14px;
+}
+
+.index-block-left div:nth-child(9){
+	margin-top:40px;
+}
+
+
+.index-block-box-tobuy{
+	font-size:18px;
+	color:blue;
+	font-weight: bold;
+}
+
+.index-block-box-history{
+	font-size:18px;
+	color: blue;
+	font-weight: bold;
+}
+
+
+.index-block-box-tobuy a:visited{
+	color:blue;
+}
+
+.index-block-box-history a:visited{
+	color:blue;
+}
 
 
 .block-right-01{
@@ -402,32 +276,36 @@
 	height:50px;
 	/*border:1px solid red;*/
 	width:450px;
-	font-size: 14px;
+	font-size: 18px;
 	margin-top:25px;
+	font-weight: bold;
 }
 
 .block-right-03{
 	height:50px;
 	/*border:1px solid red;*/
 	width:450px;
-	font-size: 14px;
-	margin-top:15px;
+	font-size: 18px;
+	margin-top:25px;
+	font-weight: bold;
 }
 
 .block-right-04{
 	height:50px;
 	/*border:1px solid red;*/
 	width:450px;
-	font-size: 14px;
-	margin-top:15px;
+	font-size: 18px;
+	margin-top:25px;
+	font-weight: bold;
 }
 
 .block-right-05{
 	height:50px;
 	/*border:1px solid red;*/
 	width:450px;
-	font-size: 14px;
-	margin-top:15px;
+	font-size: 18px;
+	margin-top:25px;
+	font-weight: bold;
 }
 
 
@@ -452,6 +330,126 @@
 	text-align: center;
 	margin-top:20px;
 	font-weight: bold;
+}
+
+
+.bet-level-box{
+	width:1170px;
+	margin:auto;
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+
+.bet-level-box a:visited{
+	color:black;
+}
+
+
+.bet-level-item{
+	display:inline-block;
+	text-align: center;
+	width:300px;
+	font-size:24px;
+	background: white;
+	height:50px;
+	line-height:50px;
+	border:1px solid lightgray;
+}
+
+.bet-level-item-margin-right-125{
+	margin-right:125px;
+}
+
+
+.bet-level-item-selected{
+	color:blue;
+	background: lightgray;
+}
+
+
+.bet-number-box{
+	width:1170px;
+	margin:auto;
+	margin-top:50px;
+	margin-bottom:40px;
+}
+
+.bet-number-item-title{
+	width:100%;
+	height:40px;
+	font-weight: bold;
+	text-align: center;
+	font-size:18px;
+	margin-bottom:20px;
+}
+
+
+.bet-number-item{
+	width:100%;
+	height:50px;
+	text-align:center;
+	font-size:18px;
+	font-weight: bold;
+	background:#FAFAFA;
+	margin-top:10px;
+	border:1px solid lightgray;
+}
+
+.bet-number-item div:nth-child(1){
+	font-size:36px;
+}
+
+.bet-number-item div:nth-child(2){
+	line-height:30px;
+	vertical-align: top;
+	margin-top:10px;
+}
+
+.bet-number-item div:nth-child(3){
+	line-height:30px;
+	vertical-align: top;
+	margin-top:10px;
+}
+
+.bet-number-item div:nth-child(4){
+	line-height:30px;
+	vertical-align: top;
+	margin-top:10px;
+}
+
+.bet-number-item div:nth-child(5){
+	line-height:30px;
+	vertical-align: top;
+	margin-top:10px;
+}
+
+
+
+.item-bet-number{
+	width:100px;
+	display:inline-block;
+}
+
+
+
+.item-bet-address{
+	width:430px;
+	display:inline-block;
+}
+
+.item-bet-all-count{
+	width:200px;
+	display:inline-block;
+}
+
+.item-bet-all-money{
+	width:200px;
+	display:inline-block;
+}
+
+.item-bet-win-count{
+	width:200px;
+	display:inline-block;
 }
 
 
