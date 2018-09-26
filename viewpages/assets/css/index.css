@@ -1,6 +1,8 @@
 body{
     /*color:dimgray;*/
-    background: #F1F4F5;
+    /*background: #F1F4F5;*/
+    background:#262A41;
+    color: #C7CCE5;
 }
 
 header{
@@ -40,6 +42,8 @@ header{
     width: 512px;
     height:800px;
     float:left;
+    background:#181B2A;
+    /*#1B1E2E 标题 */
 }
 
 .game-story{
